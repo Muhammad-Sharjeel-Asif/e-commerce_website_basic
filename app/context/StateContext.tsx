@@ -39,7 +39,7 @@ const StateContext = ({ children }: { children: ReactNode }) => {
     setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + quantity);
 
     if (checkProductInCart) {
-      const updatedCartItems = cartItems.map((cartProduct) => {
+      cartItems.map((cartProduct) => {
         if (cartProduct._id === product._id) return {
           ...cartProduct,
           quantity: cartProduct.quantity + quantity,

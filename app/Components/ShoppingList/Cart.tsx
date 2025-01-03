@@ -6,12 +6,9 @@ import { AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import minus from '../../Components/ShopDetails/Minus.png';
 import plus from '../../Components/ShopDetails/Plus.png';
 import { TiDeleteOutline } from 'react-icons/ti';
-
 import { useStateContext } from '../../context/StateContext'
 import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
-import product from '@/sanity/product';
-
 
 const Cart = () => {
     const cartRef = useRef<HTMLDivElement | null>(null);
